@@ -95,17 +95,21 @@ class SinaStrategy extends OpauthStrategy{
 			//debug($results);
 			//debug($sinauser);
       //debug($this->auth);	
-				
-         $completeUrl = Configure::read('Opauth._cakephp_plugin_complete_url');
-         if (empty($completeUrl)) $completeUrl = Router::url('/opauth-complete');
-                
-         $CakeRequest = new CakeRequest('/opauth-complete');
-         $data['auth'] = $this->auth;
-         $CakeRequest->data = $data;
-                
-         $Dispatcher = new Dispatcher();
-         $Dispatcher->dispatch( $CakeRequest, new CakeResponse() );
-         exit();
+
+         $this->callback();
+
+				 // If the data doesn't seem to be written to the session, it is probably because your sessions are
+				 // not set up for UTF8. The following lines will jump over the security but will allow you to use
+				 // the plugin without utf8 support in the database.
+
+         // $completeUrl = Configure::read('Opauth._cakephp_plugin_complete_url');
+         // if (empty($completeUrl)) $completeUrl = Router::url('/opauth-complete');
+         // $CakeRequest = new CakeRequest('/opauth-complete');
+         // $data['auth'] = $this->auth;
+         // $CakeRequest->data = $data;
+         // $Dispatcher = new Dispatcher();
+         // $Dispatcher->dispatch( $CakeRequest, new CakeResponse() );
+         // exit();
 		}
 		else
 		{

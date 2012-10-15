@@ -6,12 +6,13 @@ Implemented based on Opauth's Facebook Strategy
 
 Getting started
 ----------------
+0. Make sure your cake installation supports UTF8
+
 1. Install Opauth-Sina:
    ```bash
    cd path_to_opauth/Strategy
    git clone git://github.com/uzyn/opauth-sina.git Sina
    ```
-
 2. Create Sina Weibo application at http://open.weibo.com/apps/
    - It is a web application
 	 - Callback: http://path_to_opauth/sina_callback
