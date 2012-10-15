@@ -100,7 +100,8 @@ class SinaStrategy extends OpauthStrategy{
          if (empty($completeUrl)) $completeUrl = Router::url('/opauth-complete');
                 
          $CakeRequest = new CakeRequest('/opauth-complete');
-         $CakeRequest->data = $this->auth;
+         $data['auth'] = $this->auth;
+         $CakeRequest->data = $data;
                 
          $Dispatcher = new Dispatcher();
          $Dispatcher->dispatch( $CakeRequest, new CakeResponse() );
