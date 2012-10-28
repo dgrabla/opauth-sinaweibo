@@ -10,7 +10,7 @@
  * @license      MIT License
  */
 
-class SinaStrategy extends OpauthStrategy{
+class SinaweiboStrategy extends OpauthStrategy{
 	
 	/**
 	 * Compulsory config keys, listed as unassociative arrays
