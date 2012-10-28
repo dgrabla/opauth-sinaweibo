@@ -1,7 +1,7 @@
 {
-	"name": "opauth/sina",
-	"description": "Sina strategy for Opauth",
-	"keywords": ["authentication","auth","sina", "weibo"],
+	"name": "opauth/sinaweibo",
+	"description": "SinaWeibo strategy for Opauth",
+	"keywords": ["authentication","auth","sina", "weibo","sinaweibo"],
 	"homepage": "http://opauth.org",
 	"license": "MIT",
 	"authors": [

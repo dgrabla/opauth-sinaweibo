@@ -1,6 +1,6 @@
-Opauth-Sina
+Opauth-SinaWeibo
 =============
-[Opauth] strategy for Sina Weibo authentication.
+Opauth strategy for Sina Weibo authentication.
 
 Based on Opauth's Facebook Oauth2 Strategy
 
