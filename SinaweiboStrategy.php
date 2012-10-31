@@ -59,7 +59,6 @@ class SinaweiboStrategy extends OpauthStrategy{
 			$response = $this->serverPost($url, $params,null,$headers);
 			if (empty($response)){
 				$error = array(
-					'provider' => 'Sina',
 					'code' => 'Get access token error',
 					'message' => 'Failed when attempting to get access token',
 					'raw' => array(
@@ -75,7 +74,6 @@ class SinaweiboStrategy extends OpauthStrategy{
       $sinauser = $this->getuser($results['access_token'],$results['uid']); 
 			
 			$this->auth = array(
-					'provider' => 'Sina',
 					'uid' => $sinauser->idstr,
 					'info' => array(
 					),
@@ -114,7 +112,6 @@ class SinaweiboStrategy extends OpauthStrategy{
 		else
 		{
 			$error = array(
-				'provider' => 'Sina',
 				'code' => $_GET['error'],
 				'message' => $_GET['error_description'],
 				'raw' => $_GET
@@ -132,7 +129,6 @@ class SinaweiboStrategy extends OpauthStrategy{
 		} 
 	  else{
 			$error = array(
-				'provider' => 'Sina',
 				'code' => 'Get UID error',
 				'message' => 'Failed when attempting to query for user UID',
 				'raw' => array(
@@ -152,7 +148,6 @@ class SinaweiboStrategy extends OpauthStrategy{
 			}
 			else{
 			$error = array(
-				'provider' => 'Sina',
 				'code' => 'Get User error',
 				'message' => 'Failed when attempting to query for user information',
 				'raw' => array(
