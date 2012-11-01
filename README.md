@@ -11,7 +11,7 @@ Getting started
 1. Install Opauth-Sina:
    ```bash
    cd path_to_opauth/Strategy
-   git clone git://github.com/dgrabla/opauth-sina.git Sinaweibo
+   git clone git://github.com/dgrabla/opauth-sina.git SinaWeibo
    ```
 2. Create Sina Weibo application at http://open.weibo.com/apps/
    - It is a web application
@@ -28,7 +28,7 @@ Required parameters:
 
 ```php
 <?php
-'Sinaweibo' => array(
+'SinaWeibo' => array(
 	'key' => 'YOUR APP KEY',
 	'secret' => 'YOUR APP SECRET'
 )
